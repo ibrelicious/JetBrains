@@ -1,10 +1,9 @@
-  <!doctype html>
+<!doctype html>
 <html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>My Special Page</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
@@ -18,16 +17,47 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#0f172a">
 </head>
-
 <body>
+<div class="body-wrap">
+  <div class="left">
+    <h1>My special page</h1>
+    <p>This page is a simple study exercise: a header, a short paragraph, a text link, and later an image with alt text.</p>
+    <p>
+      <a href="https://www.youtube.com/watch?v=k-5YFwXyAjc" target="_blank" rel="noopener">
+        <span class="yt-blue">YouTube</span> — <span class="trap-purple">Trappin in Japan</span>
+      </a>
+    </p>
+    <p>Walk it like I talk it.</p>
+    <a href="/"><img src="./img/logo.png" alt="Home" style="width:48px;height:auto;display:block;"></a>
+  </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+  <div class="right">
+    <a href="https://www.youtube.com/watch?v=k-5YFwXyAjc" target="_blank" rel="noopener">
+      <img src="./img/trappin-japan.png" alt="Trappin in Japan neon logo"
+           style="max-width:100%;height:auto;border-radius:12px;display:block;">
+    </a>
 
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="12" viewBox="0 0 800 12"
+         aria-hidden="true" focusable="false" style="display:block; max-width:100%; height:auto; margin-top:16px">
+      <defs>
+        <linearGradient id="g" x1="0%" y1="50%" x2="100%" y2="50%">
+          <stop offset="0%"  stop-color="#22d3ee"/>
+          <stop offset="100%" stop-color="#a855f7"/>
+        </linearGradient>
+        <filter id="glow" x="-50%" y="-300%" width="200%" height="700%">
+          <feGaussianBlur stdDeviation="6"/>
+        </filter>
+      </defs>
+      <rect x="0" y="5" width="800" height="2" rx="1" fill="url(#g)" filter="url(#glow)"/>
+      <rect x="0" y="5" width="800" height="2" rx="1" fill="url(#g)"/>
+    </svg>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
 </body>
+
 
 </html>
