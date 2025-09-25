@@ -285,3 +285,17 @@ a:hover, a:focus{ color:#60a5fa; }
   .body-wrap{ grid-template-columns:1fr; gap:2rem; }
   .right{ order:-1; } /* show image first on small screens if desired */
 }
+:root{
+  --extend-left: 600px;  /* increase until the line starts where you want */
+  --grid-gap: 3rem;      /* same as .body-wrap gap */
+}
+
+.divider{ margin-top:16px; }
+
+.full-divider{
+  display:block;
+  height:12px;
+  width: calc(100% + var(--extend-left) + var(--grid-gap));
+  transform: translateX(calc(-1 * (var(--extend-left) + var(--grid-gap))));
+}
+
